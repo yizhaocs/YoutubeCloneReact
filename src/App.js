@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import Header from './Header';
+import Sidebar from './Sidebar';
+import RecommendedVideos from './RecommendedVideos';
 import './App.css';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    // use lower case for className is for following BEM class naming conversion
+    <div className="app"> 
+      {/* <h1> hello yizhao </h1> */}
+      <Header/>
+      <div className="app__page">
+        <Sidebar />
+        <RecommendedVideos />
+        {/* RecommendedVideos -> <RecommendedVideos /> */}
+      </div>   
     </div>
   );
 }

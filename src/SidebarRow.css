@@ -1,0 +1,4 @@
+.sidebarRow{
+    display: flex; /*  all the children display in a row */
+    align-items: center; /*  To horizontally center align all children*/
+}

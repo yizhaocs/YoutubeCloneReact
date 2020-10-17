@@ -1,0 +1,43 @@
+.header{
+    display: flex; /*  all the children display in a row */
+    align-items: center; /*  To horizontally center align all children*/
+    justify-content: space-between; /*  add space between each div*/
+    padding: 20px;
+    position: sticky; /*  make sure the header always sticky */
+    top: 0; /* make sure the header always sticky on top */
+    z-index: 100; /* nothing is underneath the header */
+    background-color: white; /* needs to be white otherwise is transparent */
+}
+
+.header__logo{
+    height: 30px;
+    object-fit:contain; /* The replaced image is scaled to maintain its aspect ratio while fitting within the element's content box */
+    margin-left: 20px; /*  don't let the icons touch each other, so move left a little bit */
+}
+
+.header__input{
+    display: flex; /*  all the children display in a row */
+    align-items: center; /*  To horizontally center align all children*/
+    width: 40%;
+    border: 1px solid lightgray;
+}
+
+.header__inputButton{
+    width: 50px !important;
+    background-color: #fafafa;
+    border-left: 1px solid lightgray;
+    color: gray;
+}
+
+.header__icon{
+    margin-right: 5px;  /*  don't let the icons touch each other, so move right a little bit */
+}
+.header__icons{
+    display: flex; /*  all the children display in a row */
+    align-items: center; /*  To horizontally center align all children*/
+}
+
+.header__input > input{ /*  header__input's direct child input */
+    flex: 1; /*  use as much room as you have */
+    border: none;
+}
